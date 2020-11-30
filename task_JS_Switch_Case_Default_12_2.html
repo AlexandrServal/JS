@@ -1,0 +1,22 @@
+<html><!--Switch Case default-->
+    <head>
+        <title>Scripr</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <h1 id="day"></h1>
+        <script>
+         var data=new Date();
+         var day=data.getDay();
+         switch(day){
+            case 1: day = "Понедельник"; break;
+            case 2: day = "Вторник"; break;
+            case 3: day = "Среда"; break;
+            case 4: day = "Четверг"; break;
+            case 5: day = "Пятница"; break;
+            default: day = "Выходной";
+         }
+         document.getElementById("day").innerHTML="Сегодня " + day;
+        </script>
+    </body>
+</html>

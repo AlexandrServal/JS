@@ -1,0 +1,30 @@
+<html><!-- Практическое занятие 13-->
+    <head>
+        <meta charset="UTF-8">
+        <title>И</title>
+        <script>
+            var count=0;
+            
+
+        </script>
+    </head>
+    <body>
+        <p id="rez"></p>
+        <img class="image" src="js16_1.png" onclick=count++;><!--Счетчик цыкла-->
+        <script>
+           var  mesage="";
+        if(count==1){
+            mesage='Этого не достаточно вы нажали только один раз';
+        }
+        else if( count>=2 && count<=10 ){
+            mesage='Вы нажали '+count+' раз Можно больше ';
+         }
+         else{
+             mesage='Вы были настойчивы чтобы нажать '+count+' раз';
+         }
+         document.getElementById('zer').innerHTML=mesage;
+        </script>
+       
+        <p>Нажмите на изображение</p>
+    </body>
+</html>
